@@ -1,0 +1,162 @@
+<head>
+	<title>Website</title>
+	<meta property="og:title" content="WebPage"/>
+	<meta property="og:description" content="Projects and other stuff by Tulir"/>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="/lib/bootstrap.min.css">
+
+<link href='https://fonts.googleapis.com/css?family=Raleway:300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/css/text.css">
+<link rel="stylesheet" href="/css/nav.css">
+<link rel="stylesheet" href="/css/footer.css">
+
+	<link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+	<div class="container">
+<nav class="navbar" role="navigation">
+	<a class="navbar-brand pull-xs-left" href="/">Website</a>
+
+	<button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#nav-main">&#9776;</button>
+	<ul class="nav navbar-nav collapse navbar-toggleable-xs pull-xs-right" id="nav-main">
+		<li class="nav-item">
+			<a class="nav-link" href="/">HOME</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/blog/">BLOG</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://github.com">GITHUB</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://about.gitlab.com/">GITLAB</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="/contact/">CONTACT</a>
+		</li>
+	</ul>
+</nav>
+</div>
+
+	<div class="container" id="introduction-container">
+		<div class="jumbotron introduction" id="introduction">
+			<div class="hi-block" id="hi">
+				<div class="hi-hi">Hi, I'm</div>
+				<div class="hi-name">Serafim</div>
+			</div>
+			<p class="introduction-text" id="main-introduction">
+				I do things for fun. I love sleeping, eating and procrastinating. Also, watching
+					<a class="black-link" href="https://youtube.com">YouTube</a> videos and surfing
+					<a class="black-link" href="http://instagram.com">Instagram</a>.
+				I've also read some books, such as <a class="black-link" href="https://en.wikipedia.org/wiki/Harry_Potter">Harry Potter</a>.
+
+				More recently I've attended to university.
+				All my public projects can be found on <a href="https://github.com">GitHub</a>.
+				See the <a href="/contact/">Contact section</a> for my contact information.
+			</p>
+		</div>
+	</div>
+
+	<div class="work">
+		<div class="container">
+			<br>
+			<center><h1>Some text:</h1></center>
+			<div class="row">
+				<div class="col-md-4" id="work-block-1">
+					<div class="card card-block work">
+						<h4 class="card-title">
+							<a class="card-link white-link" href="https://github.com">Moreasd</a>
+						</h4>
+						<p class="card-text">
+							Surprise steepest recurred landlord mr wandered amounted of. Continuing devonshire but considered its.
+							Rose past oh shew roof is song neat.
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-4" id="work-block-2">
+					<div class="card card-block work">
+						<h4 class="card-title">
+							<a class="card-link white-link" href="#">alpha-beta</a>
+						</h4>
+						<p class="card-text">
+							Husbands ask repeated resolved but laughter debating. She end cordial visitor noisier
+							fat subject general picture. Or if offering confined entrance no.
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-4" id="work-block-3">
+					<div class="card card-block work">
+						<h4 class="card-title">
+							<a class="card-link white-link" href="https://github.com">ami<b>vilva</b></a>
+						</h4>
+						<p class="card-text">
+							Manor we shall merit by chief wound no or would.
+							Oh towards between subject passage sending mention or it.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+	<div class="container">
+		<center>
+			<div style="line-height: 50%;"><br></div>
+			<a class="foot-link" href="/">Home</a>
+	        <a class="foot-link" href="/blog">Blog</a>
+	        <a class="foot-link" href="https://github.com/">Projects</a>
+			<a class="foot-link" href="/contact/">Contact</a>
+			<div style="line-height: 100%;"><br></div>
+			<a class="foot-image" href="https://ukr.net">
+				<img width="32" height="32" alt="Email" src="/images/email.svg" onerror="this.src='/images/email.png'"/>
+			</a>
+			<a class="foot-image" href="https://github.com">
+				<img width="32" height="32" alt="Github" src="/images/github.svg" onerror="this.src='/images/github.png'"/>
+			</a>
+			<a class="foot-image" href="https://gitlab.com">
+				<img width="32" height="32" alt="GitLab" src="/images/gitlab.svg"/>
+			</a>
+			<a class="foot-image" href="https://t.me/nuuu_takoe">
+				<img width="32" height="32" alt="Telegram" src="/images/telegram.svg" onerror="this.src='/images/telegram.png'"/>
+			</a>
+			<div style="line-height: 100%;"><br></div>
+			<div class="secondary-text">Copyright © 2019
+				- Serafim Tronko
+				- Favicon from <a class="black-alt-link" href="http://iconcreme.com/">http://iconcreme.com/</a>
+			</div>
+			<div style="line-height: 50%;"><br></div>
+		</center>
+	</div>
+</div>
+
+<script src="/lib/jquery.min.js"></script>
+<script src="/lib/bootstrap.min.js"></script>
+
+
+<!-- Set active class in main navbar -->
+<script type="text/javascript">
+	$('#nav-main').find('a[href="' + location.pathname + '"]').addClass('active');
+</script>
+
+<script>
+	$(document).ready(fixFooter);
+	$(window).resize(fixFooter);
+
+	function fixFooter() {
+		var docHeight = $(window).height();
+		var footerHeight = $('.footer').height();
+		var footerTop = $('.footer').position().top + footerHeight;
+
+		if (footerTop < docHeight) {
+			$('.footer').css('margin-top', (docHeight - footerTop) + 'px');
+		}
+	}
+</script>
+
+</body>
+</html>
